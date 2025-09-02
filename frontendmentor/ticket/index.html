@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    </style>
+  </head>
+  <body>
+    <!-- Form starts -->
+    <div class="form-container">
+      <div class="title">
+      <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+      </div>
+      <form>
+      <div class="upload-section">
+        <label for="upload-section"> Upload Avatar</label>
+        <div class="input-section">
+        <input type="file" id="upload-section" name="upload-section" />
+        <!-- <img src="" alt=""> -->
+        <p>Upload Avatar Drag and drop or click to upload</p>
+        </div>
+        <span class="caption">
+        Upload your photo
+        (JPG or PNG, max size: 500KB).
+        </span>
+      </div>
+      <div class="name-section">
+        <label for="full-name">Full Name</label>
+        <div class="name-input">
+        <input type="text" name="full-name" id="full-name" placeholder="">
+        </div>
+      </div>
+      <div class="name-section">
+        <label for="e-mail">E-mail Address</label>
+        <div class="name-input">
+        <input type="email" name="e-mail" id="e-mail" placeholder="example@email.com">
+        </div>
+      </div>
+      <div class="name-section">
+        <label for="GitHub">GitHub Username</label>
+        <div class="name-input">
+        <input type="text" name="GitHub" id="GitHub" placeholder="@yourusername">
+        </div>
+      </div>
+      <div class="btn"><button type="submit">Generate My Ticket</button></div>
+      </form>
+    </div>
+      <!-- Form ends -->
+
+    <!-- Generated tickets starts
+      <div class="form-container">
+      <div class="title">
+        <h2>Congrats,
+    Full Name ! Your ticket is ready. </h2>
+        <p>We've emailed your ticket to
+    Email Address 
+    and will send updates in the run up to the event.</p>
+      </div> -->
+
+     <!-- Coding Conf Jan 31, 2025 
+    Austin, TX -->
+
+    <!-- Generated tickets ends -->
+<!-- 
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script>
+     const form = document.querySelector("form") ;
+    //  console.log(form);
+    form.addEventListener("submit",function (e){
+      e.preventDefault()
+      const name = document.getElementById("full-name").value;
+      const mail = document.getElementById("e-mail").value;
+      const git = document.getElementById("GitHub").value;
+
+      console.log(name , mail , git);
+      
+    })
+
+    </script>
+  </body>
+</html>
