@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  overflow: hidden
+}
+
+body {
+    /* background-image: url('generated-image.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* color: white; */
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* text-align: center; */
+}
+.header{
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+     /* background: rgba(0, 0, 0, 0.13); */
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav li {
+    list-style: none;
+    text-decoration: none;
+    
+}   
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.li-im{
+    height: 30px;
+    width: 30px;
+}
+.username-box { 
+    /* background: rgba(0, 0, 0, 0.13); */
+    padding: 20px;
+    border-radius: 15px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+.git-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+ flex-direction: column;
+ /* align-items: center; */
+ line-height: .6;
+}
+.form input{
+    background: rgba(0, 0, 0, 0.089);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+     /* color: white; */
+    font-size: 20px;
+    
+}
+.form button{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
