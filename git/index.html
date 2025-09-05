@@ -11,31 +11,40 @@
 
 </head>
 <body>
-    <head>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-content">
+            <div class="scroll-indicator"></div>
+            <p>Loading GitHub profile...</p>
+        </div>
+    </div>
+    
+    <!-- <head>
         <div class="header">
            <div class="head-div">
             <ul class="nav">
-                <li class="li-im"><a href="#"><img src="github.png"></a></li>
+                <li class="li-im"><a href="#"><img src="github-sign.png"></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
             </ul>
            </div>
         </div>
-    </head>
+    </head> -->
     <!-- login detail -->
-<div class="body">
-    <div class="username-box">
+<div class="body fade-in">
+    <div class="username-box slide-up">
         <div class="git-icon">
-           <div class="icon"><img src="github.png" alt=""></div>
+           <div class="icon"><img src="github-sign.png" alt=""></div>
            <h2>GITHUB</h2>
         </div>
-        <form class="form">
+        <form class="form" id="githubForm">
             <label for="username">Enter Username</label> <br>
-            <input type="text" name="username" id="username" placeholder="@github"> <br>
-            <a href="second.html"> <button type="submit">Submit</button></a>
+            <input type="text" name="username" id="username" placeholder="@github" required> <br>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>

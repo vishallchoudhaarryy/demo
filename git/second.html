@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <head>
-        <div class="header">
-           <div class="head-div">
-            <ul class="nav">
-                <li class="li-im"><a href="#"><img src="github.png""></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-           </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  </head>
+  <body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-content">
+            <div class="scroll-indicator"></div>
+            <p>Loading profile data...</p>
         </div>
-    </head>
+    </div>
+    
+    <!-- <head>
+      <div class="header">
+        <div class="head-div">
+          <ul class="nav">
+            <li class="li-im"><a href="#"><img src="github.png""></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </head> -->
     <!-- login detail -->
 
-
-</body>
+    <div class="body fade-in">
+      <div class="username-box slide-up">
+        <div class="profile-box">
+          <div class="profile"><img src="github-sign.png" alt="" /></div>
+          <div class="join">joined:<span class="date">20/03/2025</span></div>
+        </div>
+        <div class="user-details">
+            <div class="name"><span class="name-text">vishal</span></div>
+            <div class="bio"><span class="bio-text"><em>Bio goes here</em></span></div>
+        </div>
+        <div class="repo">
+            <div class="rep">repos <br> <span class="repo-count">0</span></div>
+            <div class="rep">followers <br> <span class="followers-count">0</span></div>
+            <div class="rep">following <br> <span class="following-count">0</span></div>
+        </div>
+        <div class="low">
+            <div class="location"><i class="ri-map-pin-line"></i><span class="location-text">Location goes here</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
